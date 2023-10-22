@@ -1,36 +1,29 @@
 # IphoneDiagramaClass.dio
 
 ```mermaid
-@startuml
-+-----------------+
-|    Iphone     |
-+-----------------+
-| + tocarMusica() |
-| + pausarMusica() |
-| + selecionarMusica() |
-+-----------------+
+classDiagram
+    class Iphone {
+    }
 
-+-----------------+
-|    Player     |
-+-----------------+
-| + tocarMusica() |
-| + pausarMusica() |
-| + selecionarMusica() |
-+-----------------+
+    class Player {
+        + tocarMusica()
+        + pausarMusica()
+        + selecionarMusica()
+    }
 
-+-----------------+
-|    Telefone    |
-+-----------------+
-| + ligar()       |
-| + atender()     |
-| + encerrarChamada() |
-+-----------------+
+    class Telefone {
+        + ligar()
+        + atender()
+        + encerrarChamada()
+    }
 
-+-----------------+
-|    Internet    |
-+-----------------+
-| + exibirPagina() |
-| + addNewGuia()   |
-| + attGuia()      |
-+-----------------+
+    class Internet {
+        + exibirPagina()
+        + addNewGuia()
+        + attGuia()
+    }
+
+    Iphone --> Player: 
+    Iphone --> Telefone: 
+    Iphone --> Internet: 
 ```
