@@ -1,5 +1,6 @@
 # IphoneDiagramaClass.dio
-```plantuml
+
+```mermaid
 @startuml
 +-----------------+
 |    Iphone     |
